@@ -2,7 +2,7 @@ import { PERSONAL_INFO } from "@/lib/constants";
 
 export default function Hero() {
   return (
-    <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-white to-slate-50 pt-20">
+    <section className="min-h-screen flex items-center justify-center bg-gradient-to-b from-white to-slate-50">
       <div className="max-w-4xl mx-auto px-6 py-20 text-center">
         <div className="animate-fade-in">
           {/* Greeting */}
