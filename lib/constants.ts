@@ -6,5 +6,6 @@ export const PERSONAL_INFO = {
   links: {
     github: "https://github.com/sayansingha",
     linkedin: "https://www.linkedin.com/in/sayan-singha-a4704213b/",
+    medium: "https://sayansingha.medium.com/",
   }
 } as const;
