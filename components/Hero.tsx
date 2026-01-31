@@ -42,7 +42,9 @@ export default function Hero() {
                 />
               </svg>
               <a
-                href={`mailto:${PERSONAL_INFO.email}`}
+                href={`https://mail.google.com/mail/?view=cm&fs=1&to=${PERSONAL_INFO.email}`}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="text-lg hover:text-blue-600 transition-colors duration-300"
               >
                 {PERSONAL_INFO.email}
@@ -89,7 +91,9 @@ export default function Hero() {
           {/* CTA Button */}
           <div className="flex justify-center">
             <a
-              href={`mailto:${PERSONAL_INFO.email}`}
+              href={`https://mail.google.com/mail/?view=cm&fs=1&to=${PERSONAL_INFO.email}`}
+              target="_blank"
+              rel="noopener noreferrer"
               className="px-8 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
             >
               Get in Touch
