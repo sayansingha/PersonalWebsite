@@ -104,15 +104,37 @@ export default function Hero() {
             </div>
           </div>
 
-          {/* CTA Button */}
-          <div className="flex justify-center">
+          {/* CTA Buttons */}
+          <div className="flex flex-col sm:flex-row gap-4 justify-center items-center">
             <a
               href={`https://mail.google.com/mail/?view=cm&fs=1&to=${PERSONAL_INFO.email}`}
               target="_blank"
               rel="noopener noreferrer"
-              className="px-8 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl"
+              className="px-8 py-3 bg-blue-600 text-white font-medium rounded-lg hover:bg-blue-700 transform hover:scale-105 transition-all duration-300 shadow-lg hover:shadow-xl min-w-[200px]"
             >
               Get in Touch
+            </a>
+            <a
+              href={PERSONAL_INFO.resume}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="px-8 py-3 bg-white text-slate-700 font-medium rounded-lg border-2 border-slate-300 hover:border-blue-500 hover:text-blue-600 transform hover:scale-105 transition-all duration-300 min-w-[200px] flex items-center justify-center gap-2"
+            >
+              <svg
+                className="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  strokeWidth={2}
+                  d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z"
+                />
+              </svg>
+              View Resume
             </a>
           </div>
         </div>
